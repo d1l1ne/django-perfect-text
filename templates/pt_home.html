@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'perfecttext.ico' %}"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Urbanist&display=swap');
+        .mainheader{
+            font-family: 'Overpass', sans-serif;
+            font-size:3em;
+        }
+        .subheader{
+            font-family: 'Overpass', sans-serif;
+        }
+        body{
+            font-family: 'Urbanst', sans-serif;
+        }
+    </style>
+    <title>Home - PerfectText</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h1 class="mainheader">PerfectText</h1>
+        <h3 class="subheader">Make your text look perfect</h3>
+        <form action="{% url 'result' %}" method = "POST">
+            {% csrf_token %}
+            <textarea class="input" cols="50" rows="10" name="usertext"></textarea>
+            <br>
+            <label class="radios">
+                <input type="radio" name="urls" value="urlsn" checked class="rb">My text doesn't contain urls or email adresses
+            </label>
+            <label class="radios">
+                <input type="radio" name="urls" value="urlsy" class="rb">My text contains urls or email adresses 
+            </label>
+            <br>
+            <input class="submit_button" type="submit" value="Let's go!">
+        </form>
+        <br>
+        <form action="{% url 'help' %}">
+            <button class="button">Help</button>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'perfecttext.ico' %}"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Urbanist&display=swap');
+        .mainheader{
+            font-family: 'Overpass', sans-serif;
+            font-size:3em;
+        }
+        .subheader{
+            font-family: 'Overpass', sans-serif;
+        }
+        body{
+            font-family: 'Urbanst', sans-serif;
+        }
+    </style>
+    <title>Help - PerfectText</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h1 class="mainheader">PerfectText</h1>
+        <h3 class="subheader">Help</h3>
+        <br>
+        <p>This web-application corrects your text by deleting multi spaces and unnecessary spaces before and after punctuation marks, quotation marks, brackets, dashes; fixing sentence separation by adding spaces after '.' and capitalizing first letter if it's necessary. Please choose urls/emails option correctly, make an application know if your text contains any of them. Example: user's mistake in this option can change "google.com" to "google. Com". You can always use "My text contains urls or email adresses" but process may take a little bit more time.</p>
+        <h3>Example:</h3>
+        <p>Lorem  ipsum dolor sit            amet , consectetur adipiscing elit .pellentesque vehicula.</p>
+        <h3>Processed text:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula. </p>
+        <br><br>
+        <p>P.S. It's my first django project :) You can support me by following my <a href="https://github.com/d1l1ne" target="_blank">GitHub</a>. Also you can download Windows version <a href="https://drive.google.com/drive/folders/1rxlP_r7VqY3scYGzdJpk3QADHxkLkpg7?usp=sharing" target="_blank">here</a>.</p>
+        <form action="{% url 'home' %}">
+            <button class="button">Go back</button>
+           </form>
+    </div>
+</body>
+</html>

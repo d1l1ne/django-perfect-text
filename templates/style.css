@@ -1,0 +1,103 @@
+body{
+    background: #282629;
+    color:rgba(143, 250, 128, 0.404);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.maindiv {
+    margin: 10em auto;
+    padding: 2em;
+    background-color: #202027;
+    border-radius: 0.5em;
+    width: 50%;
+    box-shadow: 2px 3px 7px 2px rgba(143, 250, 128, 0.404);
+}
+.submit_button{
+    background: #282629;
+    color:aquamarine;
+    box-shadow: 1px 2px 4px 1px rgba(143, 250, 128, 0.404); 
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input{
+    background: #282629;
+    color:aquamarine;
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color:rgba(143, 250, 128, 0.404);
+    box-shadow: 1px 2px 4px 1px rgba(143, 250, 128, 0.404);
+    width: 90%;
+}
+.input:focus{
+    outline: none !important;
+    border-color: aquamarine;
+    box-shadow: 1px 2px 4px 1px aquamarine; 
+}
+.mainheader{
+    text-align: center;   
+}
+.subheader{
+    text-align: center;
+}
+.radios{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}
+a{
+    outline: none;
+    text-decoration: none;
+}
+a:link{
+    color: aquamarine;
+}
+a:visited{
+    color:darkgreen;
+}
+.button{
+    background: #282629;
+    color:aquamarine;
+    box-shadow: 1px 2px 4px 1px rgba(143, 250, 128, 0.404); 
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 2px 1px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rb::before{
+    background-color: black;
+
+}
+.subdiv{
+    word-wrap:break-word;
+    overflow: auto;
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+    color: aquamarine;
+    margin: 4em auto;
+    padding: 2em;
+    background-color: #0c0c0e;
+    border-radius: 0.5em;
+    width: 70%;
+    box-shadow: 2px 2px 4px 4px rgba(46, 232, 187, 0.404);    
+}
